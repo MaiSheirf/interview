@@ -1,0 +1,4 @@
+instanceoff is a keyword that is used for checking if a reference variable is containing a given type of object reference or not.
+Following is a Java program to show different behaviors of instanceoff.
+Henceforth it is known as a comparison operator where the instance is getting compared to type returning boolean true or false as in java we do not have 0 and 1 boolean return types.
+

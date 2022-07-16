@@ -1,0 +1,21 @@
+Regular Expressions or Regex (in short) in Java is an API for defining String patterns that can be used for searching, manipulating, and editing a string in Java. Email validation and passwords are a few areas of strings where Regex is widely used to define the constraints. Regular Expressions are provided under java.util.regex package. This consists of 3 classes and 1 interface. The java.util.regex package
+
+Pattern Class
+Matcher Class
+PatternSyntaxException Class
+MatchResult Interface
+
+Class 1: Pattern Class
+This class is a compilation of regular expressions that can be used to define various types of patterns, providing no public constructors. This can be created by invoking the compile() method which accepts a regular expression as the first argument, thus returns a pattern after execution.
+
+Class 2: Matcher class
+This object is used to perform match operations for an input string in java, thus interpreting the previously explained patterns. This too defines no public constructors. This can be implemented by invoking a matcher() on any pattern object.
+
+Class 3: PatternSyntaxException Class
+This is an object of Regex which is used to indicate a syntax error in a regular expression pattern and is an unchecked exception. Following are the methods been there up in the PatternSyntaxException class as provided below in tabular format as follows.
+
+We create a pattern object by calling Pattern.compile(), there is no constructor. compile() is a static method in Pattern class.
+Like above, we create a Matcher object using matcher() on objects of Pattern class.
+Pattern.matches() is also a static method that is used to check if given text as a whole matches pattern or not.
+find() is used to find multiple occurrences of patterns in the text.
+We can split a text based on a delimiter pattern using the split() method

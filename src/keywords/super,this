@@ -1,0 +1,21 @@
+In java, super keyword is used to access methods of the parent class while this is used to access methods of the current class.
+
+this keyword is a reserved keyword in java i.e, we can’t use it as an identifier. It is used to refer current class’s instance as well as static members. It can be used in various contexts as given below:
+
+to refer instance variable of current class
+to invoke or initiate current class constructor
+can be passed as an argument in the method call
+can be passed as argument in the constructor call
+can be used to return the current class instance
+
+super keyword
+super is a reserved keyword in java i.e, we can’t use it as an identifier.
+super is used to refer super-class’s instance as well as static members.
+super is also used to invoke super-class’s method or constructor.
+super keyword in java programming language refers to the superclass of the class where the super keyword is currently being used.
+The most common use of super keyword is that it eliminates the confusion between the superclasses and subclasses that have methods with same name.
+super can be used in various contexts as given below:
+
+it can be used to refer immediate parent class instance variable
+it can be used to refer immediate parent class method
+it can be used to refer immediate parent class constructor.

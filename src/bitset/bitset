@@ -1,0 +1,22 @@
+BitSet is a class defined in the java.util package. It creates an array of bits represented by boolean values.
+
+Constructors:
+
+ BitSet class Constructors
+    /                  \
+ BitSet()          BitSet(int no_Of_Bits)
+BitSet() : A no-argument constructor to create an empty BitSet object.
+
+BitSet(int no_Of_Bits): A one-constructor with an integer argument to create an instance of the BitSet class with an initial size of the integer argument representing the number of bits.
+
+Important Points :
+
+The size of the array is flexible and can grow to accommodate additional bit as needed.
+As it is an array, the index is zero-based and the bit values can be accessed only by non-negative integers as an index.
+The default value of the BitSet is boolean false with a representation as 0 (off).
+Calling the clear method makes the bit values set to false.
+BitSet uses about 1 bit per boolean value.
+To access a specific value in the BitSet, the get method is used with an integer argument as an index.
+What happens if the array index in bitset is set as Negative?
+
+The program will throw java.lang.NegativeArraySizeException

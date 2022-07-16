@@ -1,0 +1,26 @@
+StringBuffer is a peer class of String that provides much of the functionality of strings. The string represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences. StringBuffer may have characters and substrings inserted in the middle or appended to the end. It will automatically grow to make room for such additions and often has more characters preallocated than are actually needed, to allow room for growth.
+
+Some Interesting Facts about the StringBuffer class
+
+Do keep the following points in the back of your mind:
+
+java.lang.StringBuffer extends (or inherits from) Object class.
+All Implemented Interfaces of StringBuffer class: Serializable, Appendable, CharSequence.
+public final class StringBuffer extends Object implements Serializable, CharSequence, Appendable.
+String buffers are safe for use by multiple threads. The methods can be synchronized wherever necessary so that all the operations on any particular instance behave as if they occur in some serial order.
+Whenever an operation occurs involving a source sequence (such as appending or inserting from a source sequence) this class synchronizes only on the string buffer performing the operation, not on the source.
+It inherits some of the methods from the Object class which such as clone(), equals(), finalize(), getClass(), hashCode(), notifies(), notifyAll().
+Remember: StringBuilder, J2SE 5 adds a new string class to Java’s already powerful string handling capabilities. This new class is called StringBuilder. It is identical to StringBuffer except for one important difference: it is not synchronized, which means that it is not thread-safe. The advantage of StringBuilder is faster performance. However, in cases in which you are using multithreading,  you must use StringBuffer rather than StringBuilder.
+
+Constructors of StringBuffer class
+
+1. StringBuffer(): It reserves room for 16 characters without reallocation
+
+StringBuffer s = new StringBuffer();
+2. StringBuffer( int size): It accepts an integer argument that explicitly sets the size of the buffer.
+
+StringBuffer s = new StringBuffer(20);
+3. StringBuffer(String str): It accepts a string argument that sets the initial contents of the StringBuffer object and reserves room for 16 more characters without reallocation.
+
+StringBuffer s = new StringBuffer("GeeksforGeeks");
+

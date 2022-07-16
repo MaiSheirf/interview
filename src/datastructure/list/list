@@ -1,0 +1,21 @@
+The List interface in Java provides a way to store the ordered collection.
+ It is a child interface of Collection.
+ It is an ordered collection of objects in which duplicate values can be stored.
+  Since List preserves the insertion order, it allows positional access and insertion of elements.
+
+The List interface is found in java.util package and inherits the Collection interface.
+It is a factory of ListIterator interface.
+ Through the ListIterator, we can iterate the list in forward and backward directions.
+  The implementation classes of the List interface are ArrayList, LinkedList, Stack, and Vector.
+   ArrayList and LinkedList are widely used in Java programming. The Vector class is deprecated since Java 5.
+
+Let us elaborate on creating objects or instances in a List class.
+Since List is an interface, objects cannot be created of the type list.
+ We always need a class that implements this List in order to create an object.
+  And also, after the introduction of Generics in Java 1.5,
+  it is possible to restrict the type of object that can be stored in the List.
+   Just like several other user-defined ‘interfaces’ implemented by user-defined ‘classes’, List is an ‘interface’, implemented by the ArrayList class, pre-defined in the java.util package.
+
+Syntax: This type of safelist can be defined as:
+
+List<Obj> list = new ArrayList<Obj> ();

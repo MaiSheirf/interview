@@ -1,0 +1,6 @@
+Type 1: Compile-time polymorphism
+
+It is also known as static polymorphism. This type of polymorphism is achieved by function overloading or operator overloading.
+
+Method Overloading: When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by change in the number of arguments or/and a change in the type of arguments.
+

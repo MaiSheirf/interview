@@ -1,0 +1,62 @@
+JDBC or Java Database Connectivity is a Java API to connect and execute the query with the database. It is a specification from Sun microsystems that provides a standard abstraction(API or Protocol) for java applications to communicate with various databases. It provides the language with java database connectivity standards. It is used to write programs required to access databases. JDBC, along with the database driver, can access databases and spreadsheets. The enterprise data stored in a relational database(RDB) can be accessed with the help of JDBC APIs.
+
+Definition of JDBC(Java Database Connectivity)
+
+JDBC is an API(Application programming interface) used in java programming to interact with databases. The classes and interfaces of JDBC allow the application to send requests made by users to the specified database.
+
+Purpose of JDBC
+
+Enterprise applications created using the JAVA EE technology need to interact with databases to store application-specific information. So, interacting with a database requires efficient database connectivity, which can be achieved by using the ODBC(Open database connectivity) driver. This driver is used with JDBC to interact or communicate with various kinds of databases such as Oracle, MS Access, Mysql, and SQL server database.
+
+Components of JDBC
+There are generally four main components of JDBC through which it can interact with a database. They are as mentioned below:
+
+1. JDBC API: It provides various methods and interfaces for easy communication with the database. It provides two packages as follows, which contain the java SE and Java EE platforms to exhibit WORA(write once run everywhere) capabilities.
+
+java.sql.*;
+2. It also provides a standard to connect a database to a client application.
+
+3. JDBC Driver manager: It loads a database-specific driver in an application to establish a connection with a database. It is used to make a database-specific call to the database to process the user request.
+
+4. JDBC Test suite: It is used to test the operation(such as insertion, deletion, updation) being performed by JDBC Drivers.
+
+5. JDBC-ODBC Bridge Drivers: It connects database drivers to the database. This bridge translates the JDBC method call to the ODBC function call. It makes use of the sun.jdbc.odbc package which includes a native library to access ODBC characteristics.
+
+architecture of jdbc:
+Description:
+
+Application: It is a java applet or a servlet that communicates with a data source.
+The JDBC API: The JDBC API allows Java programs to execute SQL statements and retrieve results. Some of the important classes and interfaces defined in JDBC API are as follows:
+DriverManager: It plays an important role in the JDBC architecture. It uses some database-specific drivers to effectively connect enterprise applications to databases.
+JDBC drivers: To communicate with a data source through JDBC, you need a JDBC driver that intelligently communicates with the respective data source.
+JDBC Drivers
+JDBC drivers are client-side adapters (installed on the client machine, not on the server) that convert requests from Java programs to a protocol that the DBMS can understand. There are 4 types of JDBC drivers:
+
+Type-1 driver or JDBC-ODBC bridge driver
+Type-2 driver or Native-API driver
+Type-3 driver or Network Protocol driver
+Type-4 driver or Thin driver
+
+Interfaces of JDBC API
+
+A list of popular interfaces of JDBC API is given below:
+
+Driver interface
+Connection interface
+Statement interface
+PreparedStatement interface
+CallableStatement interface
+ResultSet interface
+ResultSetMetaData interface
+DatabaseMetaData interface
+RowSet interface
+Classes of JDBC API
+A list of popular classes of JDBC API is given below:
+
+DriverManager class
+Blob class
+Clob class
+Types class
+
+Java application that needs to communicate with the database has to be programmed using JDBC API. JDBC Driver supporting data sources such as Oracle and SQL server has to be added in java application for JDBC support which can be done dynamically at run time. This JDBC driver intelligently communicates the respective data source.
+

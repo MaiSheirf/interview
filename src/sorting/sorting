@@ -1,0 +1,17 @@
+Whenever we do hear sorting algorithms come into play such as selection sort, bubble sort, insertion sort, radix sort, bucket sort, etc but if we look closer here we are not asked to use any kind of algorithms. It is as simple sorting with the help of linear and non-linear data structures present within java. So there is sorting done with the help of brute force in java with the help of loops and there are two in-built methods to sort in Java.
+
+Ways of sorting in Java
+
+Using loops
+Using sort() method of Arrays class
+Using sort method of Collections class
+Sorting on a subarray
+
+Note:
+
+Which sorting algorithm does Java use in sort()?
+Previously, Java’s Arrays.sort method used Quicksort for arrays of primitives and Merge sort for arrays of objects. In the latest versions of Java, Arrays.sort method and Collection.sort() uses Timsort.
+Which order of sorting is done by default?
+It by default sorts in ascending order.
+How to sort array or list in descending order?
+It can be done with the help of Collections.reverseOrder().

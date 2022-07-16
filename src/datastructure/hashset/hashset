@@ -1,0 +1,28 @@
+The HashSet class implements the Set interface, backed by a hash table which is actually a HashMap instance.
+No guarantee is made as to the iteration order of the set which means that the class does not guarantee the constant order of elements over time.
+This class permits the null element. The class also offers constant time performance for the basic operations like add, remove, contains, and size assuming the hash function disperses the elements properly among the buckets,
+
+Implements Set Interface.
+The underlying data structure for HashSet is Hashtable.
+As it implements the Set Interface, duplicate values are not allowed.
+Objects that you insert in HashSet are not guaranteed to be inserted in the same order. Objects are inserted based on their hash code.
+NULL elements are allowed in HashSet.
+HashSet also implements Serializable and Cloneable interfaces
+
+HashSet extends Abstract Set<E> class and implements Set<E>, Cloneable, and Serializable interfaces where E is the type of elements maintained by this set.
+The directly known subclass of HashSet is LinkedHashSet.
+
+Now for the maintenance of constant time performance,
+iterating over HashSet requires time proportional to the sum of the HashSet instance’s size (the number of elements) plus the “capacity” of the backing HashMap instance (the number of buckets). Thus, it’s very important not to set the initial capacity too high (or the load factor too low) if iteration performance is important.
+
+Initial Capacity: The initial capacity means the number of buckets when hashtable (HashSet internally uses hashtable data structure) is created. The number of buckets will be automatically increased if the current size gets full.
+
+Load Factor: The load factor is a measure of how full the HashSet is allowed to get before its capacity is automatically increased. When the number of entries in the hash table exceeds the product of the load factor and the current capacity, the hash table is rehashed (that is, internal data structures are rebuilt) so that the hash table has approximately twice the number of buckets.
+
+Internal working of a HashSet: All the classes of Set interface are internally backed up by Map. HashSet uses HashMap for storing its object internally. You must be wondering that to enter a value in HashMap we need a key-value pair, but in HashSet, we are passing only one value.
+
+Storage in HashMap: Actually the value we insert in HashSet acts as a key to the map Object and for its value, java uses a constant variable. So in the key-value pair, all the values will be the same.
+
+Note: The implementation in a HashSet is not synchronized, in the sense that if multiple threads access a hash set concurrently, and at least one of the threads modifies the set, it must be synchronized externally. This is typically accomplished by synchronizing on some object that naturally encapsulates the set. If no such object exists, the set should be “wrapped” using the Collections.synchronizedSet method. This is best done at creation time, to prevent accidental unsynchronized access to the set as shown below:
+
+Set s = Collections.synchronizedSet(new HashSet(...));
